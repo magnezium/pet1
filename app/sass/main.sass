@@ -1,6 +1,45 @@
+@import "app/libs/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
 
-$color-blue: blue
+$color-logo: #00AFAA
 
 body
-  background-color: $color-blue
   display: flex
+  flex-direction: column
+.navbar
+  background-color: white
+  .navbar-nav
+    float: right
+    display: flex
+    height: 100%
+    li
+      font-size: 16px
+      display: flex
+      a
+        padding: 0px 15px
+        display: flex
+        height: 100%
+        align-items: center
+  .navbar-brand
+    height: auto
+    display: flex
+    color: $color-logo
+  .logo-img
+    height: 60px
+  .icon-bar
+    background-color: $color-logo
+  .navbar-toggle
+    order: 2
+.navbar-collapse.collapse
+  height: 100% !important
+.navbar-static-top
+  border-width: 0 0 0px
+.navbar-header
+  display: flex
+  justify-content: space-between  
+.nav
+  li
+    a
+      color: $color-logo
+      &:hover, &:focus
+        background-color: $color-logo
+        color: white

@@ -1,9 +1,49 @@
 doctype html
 html[lang="en"]
   head
-    meta[charset="UTF-8"]
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width, initial-scale=1"]
+    meta[name="description" content=""]
+    meta[name="author" content=""]
+    link[rel="shortcut icon" href="../../assets/ico/favicon.ico"]
     title
-      | Document
+      | Starter Template for Bootstrap
     link[rel="stylesheet" href="css/main.css"]
+    style[type="text/css"]
+      | /* This is not a zero-length file! */
+    style[type="text/css"]
+      | /* This is not a zero-length file! */
   body
-    | привет dddd
+    .navbar.navbar-static-top[role="navigation"]
+      .navbar-header
+        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target=".navbar-collapse"]
+          span.sr-only
+            | Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand[href="#"]
+          img.logo-img[src="img/PetsLogo.svg"]
+          | Project name
+      .navbar-collapse.collapse[style="height: 1px;"]
+        ul.nav.navbar-nav
+          li.active
+            a[href="#"]
+              | Home
+          li
+            a[href="#about"]
+              | About
+          li
+            a[href="#contact"]
+              | Contact
+    .container
+      .starter-template
+        h1
+          | Bootstrap starter template
+        p.lead
+          | Use this document as a way to quickly start any new project.
+          br
+          |  All you get is this text and a mostly barebones HTML document.
+  script [src="js/libs.min.js"]
+  script [src="libs/bootstrap-sass/assets/javascripts/bootstrap.js"]
